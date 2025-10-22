@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bunnies for Sale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f6f2;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #6b4f4f;
+      text-align: center;
+    }
+    .bunny-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .bunny-card {
+      background: #fff;
+      border: 1px solid #e4d7d7;
+      border-radius: 12px;
+      width: 260px;
+      box-shadow: 0 4px 16px rgba(150,120,120,0.08);
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+    .bunny-card:hover {
+      box-shadow: 0 8px 24px rgba(150,120,120,0.18);
+    }
+    .bunny-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #eee;
+    }
+    .bunny-details {
+      padding: 16px;
+    }
+    .bunny-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #6b4f4f;
+      margin: 0 0 8px 0;
+    }
+    .bunny-description {
+      font-size: 1em;
+      color: #786363;
+      margin-bottom: 12px;
+    }
+    .bunny-price {
+      font-size: 1.1em;
+      color: #a97e7e;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .buy-btn {
+      background: #f5c6aa;
+      color: #6b4f4f;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.2s;
+    }
+    .buy-btn:hover {
+      background: #e3a984;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bunnies for Sale</h1>
+  <div class="bunny-list">
+    <div class="bunny-card">
+      <img class="bunny-img" src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Fluffy bunny">
+      <div class="bunny-details">
+        <div class="bunny-name">Fluffy</div>
+        <div class="bunny-description">A playful white bunny with soft fur. Loves cuddles and carrots.</div>
+        <div class="bunny-price">$40</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+    <div class="bunny-card">
+      <img class="bunny-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Brown bunny">
+      <div class="bunny-details">
+        <div class="bunny-name">Cocoa</div>
+        <div class="bunny-description">Sweet brown bunny, perfect for families. Gentle and friendly.</div>
+        <div class="bunny-price">$35</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+    <div class="bunny-card">
+      <img class="bunny-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Grey bunny">
+      <div class="bunny-details">
+        <div class="bunny-name">Smokey</div>
+        <div class="bunny-description">Adorable grey bunny, loves exploring and hopping around.</div>
+        <div class="bunny-price">$38</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
